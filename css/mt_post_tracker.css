@@ -1,0 +1,9 @@
+span.mt-product-wrapper {
+  display: flex;
+}
+.mt-product-views {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
