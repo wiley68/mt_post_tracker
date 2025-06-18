@@ -1,9 +1,10 @@
-span.mt-product-wrapper {
-  display: flex;
-}
-.mt-product-views {
+span.mt_product_wrapper {
   display: block;
-  margin-top: 5px;
-  font-size: 0.9em;
-  color: #555;
+}
+span.mt_label {
+  color: #111111;
+  margin-right: 15px;
+}
+span.mt_value {
+  color: #7a7a7a;
 }

@@ -61,8 +61,20 @@ if ((is_plugin_active_for_network('woocommerce/woocommerce.php')) || in_array('w
 		add_action('admin_head', 'mt_post_tracker_admin_head');
 		add_filter('manage_post_posts_columns', 'mt_post_tracker_add_column');
 		add_filter('manage_product_posts_columns', 'mt_post_tracker_add_column');
+		add_filter('manage_edit-post_sortable_columns', 'mt_post_tracker_sortable_column');
+		add_filter('manage_edit-product_sortable_columns', 'mt_post_tracker_sortable_column');
+		add_action('pre_get_posts', 'mt_post_tracker_orderby');
 		add_action('manage_post_posts_custom_column', 'mt_post_tracker_show_column', 10, 2);
 		add_action('manage_product_posts_custom_column', 'mt_post_tracker_show_column', 10, 2);
-		//add_action('woocommerce_product_meta_end', 'mt_post_tracker_show_product_meta');
+
+		$is_show_on_product = (int) get_option('mt_post_tracker_show_on_product');
+		if ($is_show_on_product) {
+			add_action('woocommerce_product_meta_end', 'mt_post_tracker_show_product_meta');
+		}
+
+		$is_show_on_post = (int) get_option('mt_post_tracker_show_on_post');
+		if ($is_show_on_post) {
+			add_action('the_content', 'mt_post_tracker_show_content');
+		}
 	}
 }

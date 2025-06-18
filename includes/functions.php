@@ -79,6 +79,26 @@ function mt_post_tracker_add_column($columns)
 	return $columns;
 }
 
+function mt_post_tracker_sortable_column($columns)
+{
+	$columns['mt_post_tracker_views'] = 'mt_post_tracker_views';
+	return $columns;
+}
+
+function mt_post_tracker_orderby($query)
+{
+	if (!is_admin() || !$query->is_main_query()) {
+		return;
+	}
+
+	$orderby = $query->get('orderby');
+
+	if ($orderby === 'mt_post_tracker_views') {
+		$query->set('meta_key', 'mt_post_tracker_views');
+		$query->set('orderby', 'meta_value_num');
+	}
+}
+
 function mt_post_tracker_show_column($column, $post_id)
 {
 	if ($column === 'mt_post_tracker_views') {
@@ -104,6 +124,18 @@ function mt_post_tracker_show_product_meta()
 	global $post;
 	$views = intval(get_post_meta($post->ID, 'mt_post_tracker_views', true));
 	if ($views) {
-		echo '<span class="sku_wrapper"><span class="label">Прегледи: </span><span class="sku">' . $views . '</span></span>';
+		echo '<span class="mt_product_wrapper"><span class="mt_label">Прегледи: </span><span class="mt_value">' . $views . '</span></span>';
 	}
+};
+
+function mt_post_tracker_show_content($content)
+{
+	if (is_singular('post') && in_the_loop() && is_main_query()) {
+		$views = intval(get_post_meta(get_the_ID(), 'mt_post_tracker_views', true));
+		if ($views) {
+			$views_html = '<span class="mt_product_wrapper"><span class="mt_label">Прегледи: </span><span class="mt_value">' . $views . '</span></span>';
+			$content .= $views_html;
+		}
+	}
+	return $content;
 };
