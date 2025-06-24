@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MT Post Tracker\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-24 09:38+0000\n"
+"PO-Revision-Date: 2025-06-24 09:48+0000\n"
+"Last-Translator: Илко Иванов\n"
+"Language-Team: Bulgarian\n"
+"Language: bg_BG\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.2.28\n"
+"X-Domain: mt_post_tracker"
+
+#: includes/mt_post_tracker_import_admin.php:27
+msgid "All statistics have been deleted."
+msgstr "Всички статистики са изтрити."
+
+#. Author of the plugin
+msgid "Avalon Ltd."
+msgstr "Авалон ООД"
+
+#: includes/functions.php:326
+msgid "Best sellers first"
+msgstr "Първо най-продаваните"
+
+#: includes/mt_post_tracker_import_admin.php:63
+msgid "Cleanup on uninstall"
+msgstr "Почистване при деинсталиране"
+
+#: includes/mt_post_tracker_import_admin.php:69
+msgid "Clear all statistics on uninstallation"
+msgstr "Изчистване на всички статистики за деинсталиране"
+
+#. Author URI of the plugin
+msgid "https://avalonbg.com"
+msgstr "https://avalonbg.com"
+
+#. URI of the plugin
+msgid "https://avalonbg.com/plugins/mt-post-tracker"
+msgstr ""
+
+#: includes/admin.php:19 includes/mt_post_tracker_import_admin.php:39
+msgid "Maxtrade Post Tracker"
+msgstr "Maxtrade Post Tracker"
+
+#: includes/admin.php:18
+msgid "Maxtrade Post Tracker - Module settings"
+msgstr "Maxtrade Post Tracker - Настройки на модула"
+
+#: includes/functions.php:327
+msgid "Most popular first"
+msgstr "Първо най-популярните"
+
+#. Name of the plugin
+msgid "MT Post Tracker"
+msgstr "MT Post Tracker"
+
+#: includes/mt_post_tracker_import_admin.php:56
+#: includes/mt_post_tracker_import_admin.php:66
+#: includes/mt_post_tracker_import_admin.php:76
+#: includes/mt_post_tracker_import_admin.php:86
+#: includes/mt_post_tracker_import_admin.php:96
+#: includes/mt_post_tracker_import_admin.php:106
+#: includes/mt_post_tracker_import_admin.php:116
+#: includes/mt_post_tracker_import_admin.php:126
+msgid "Off"
+msgstr "Изключено"
+
+#: includes/mt_post_tracker_import_admin.php:57
+#: includes/mt_post_tracker_import_admin.php:67
+#: includes/mt_post_tracker_import_admin.php:77
+#: includes/mt_post_tracker_import_admin.php:87
+#: includes/mt_post_tracker_import_admin.php:97
+#: includes/mt_post_tracker_import_admin.php:107
+#: includes/mt_post_tracker_import_admin.php:117
+#: includes/mt_post_tracker_import_admin.php:127
+msgid "On"
+msgstr "Включено"
+
+#: includes/mt_post_tracker_import_admin.php:41
+msgid "Save changes"
+msgstr "Запазване на промените"
+
+#: includes/mt_post_tracker_import_admin.php:49
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/mt_post_tracker_import_admin.php:21
+msgid "Settings saved successfully."
+msgstr "Настройките са запазени успешно."
+
+#: includes/mt_post_tracker_import_admin.php:93
+msgid "Show in admin column of posts"
+msgstr "Показване в администраторската колона на публикациите"
+
+#: includes/mt_post_tracker_import_admin.php:103
+msgid "Show in admin product column"
+msgstr "Показване в администраторската колона за продукти"
+
+#: includes/mt_post_tracker_import_admin.php:73
+msgid "Show in posts (page)"
+msgstr "Показване в публикации (страница)"
+
+#: includes/mt_post_tracker_import_admin.php:83
+msgid "Show in products"
+msgstr "Показване в продукти"
+
+#: includes/mt_post_tracker_import_admin.php:99
+msgid "Show statistics in admin column of posts"
+msgstr "Показване на статистика в администраторската колона на публикациите"
+
+#: includes/mt_post_tracker_import_admin.php:109
+msgid "Show statistics in admin product column"
+msgstr "Показване на статистика в администраторската колона за продукти"
+
+#: includes/mt_post_tracker_import_admin.php:79
+msgid "Show statistics in posts (page)"
+msgstr "Показване на статистика в публикации (страница)"
+
+#: includes/mt_post_tracker_import_admin.php:89
+msgid "Show statistics in products (page)"
+msgstr "Показване на статистика в продукти (страница)"
+
+#: includes/mt_post_tracker_import_admin.php:119
+msgid "Sort by visits by default when opening the posts page"
+msgstr ""
+"Сортиране по посещения по подразбиране при отваряне на страницата с "
+"публикации"
+
+#: includes/mt_post_tracker_import_admin.php:129
+msgid "Sort by visits by default when opening the products page"
+msgstr ""
+"Сортиране по посещения по подразбиране при отваряне на страницата с продукти"
+
+#: includes/mt_post_tracker_import_admin.php:113
+msgid "Sort posts by visits by default"
+msgstr "Сортиране на публикациите по посещения по подразбиране"
+
+#: includes/mt_post_tracker_import_admin.php:123
+msgid "Sort products by visits by default"
+msgstr "Сортиране на продуктите по посещения по подразбиране"
+
+#: includes/admin.php:47
+msgid "The file mt_post_tracker_import_admin.php was not found!"
+msgstr "Файлът mt_post_tracker_import_admin.php не е намерен!"
+
+#. Description of the plugin
+msgid "Tracks and displays simple visit statistics for posts and products."
+msgstr ""
+"Проследява и показва опростена статистика за посещения на публикации и "
+"продукти."
+
+#: includes/mt_post_tracker_import_admin.php:53
+msgid "Turn on the module"
+msgstr "Включете модула"
+
+#: includes/mt_post_tracker_import_admin.php:59
+msgid "Turning the module on/off"
+msgstr "Включване/изключване на модула"
+
+#: includes/functions.php:158
+msgid "Views"
+msgstr "Преглеждания"
+
+#: includes/functions.php:285 includes/functions.php:305
+msgid "Views: "
+msgstr "Преглеждания:"
+
+#: includes/admin.php:39
+msgid "You do not have sufficient rights to access this page."
+msgstr "Нямате достатъчни права за достъп до тази страница."

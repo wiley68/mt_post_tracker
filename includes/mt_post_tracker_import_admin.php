@@ -5,7 +5,9 @@ $mt_post_tacker_settings = [
 	'mt_post_tracker_show_on_post' => 1,
 	'mt_post_tracker_show_on_product' => 1,
 	'mt_post_tracker_show_column_post' => 1,
-	'mt_post_tracker_show_column_product' => 1
+	'mt_post_tracker_show_column_product' => 1,
+	'mt_post_tracker_posts_default_sorting' => 1,
+	'mt_post_tracker_products_default_sorting' => 1
 ];
 
 if (isset($_POST['mt_post_tracker_save'])) {
@@ -34,7 +36,7 @@ foreach ($mt_post_tacker_settings as $key => $default) {
 	<form name="mt_post_tracker_form" method="post" enctype="multipart/form-data" action="<?php echo str_replace('%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 		<?php wp_nonce_field('mt_post_tracker_settings_save', 'mt_post_tracker_nonce'); ?>
 		<div class="mt_post_tracker_page_header">
-			<?php esc_html_e('Maxtrade Simple Post Views Tracker', 'mt_post_tracker'); ?>
+			<?php esc_html_e('Maxtrade Post Tracker', 'mt_post_tracker'); ?>
 			<div>
 				<input type="submit" name="mt_post_tracker_save" class="button-primary" value="<?php esc_html_e('Save changes', 'mt_post_tracker'); ?>" />
 				<input type="submit" name="mt_post_tracker_reset" class="button" value="Изчисти статистиките" onclick="return confirm('Сигурни ли сте, че искате да изтриете всички посещения?');" />
@@ -105,6 +107,26 @@ foreach ($mt_post_tacker_settings as $key => $default) {
 								<option value=1 <?php selected($mt_post_tracker_show_column_product, 1); ?>><?php esc_html_e('On', 'mt_post_tracker'); ?></option>
 							</select>
 							<span class="mt_post_tracker_form_controll_text"><?php esc_html_e('Show statistics in admin product column', 'mt_post_tracker'); ?></span>
+						</div>
+					</div>
+					<div class="mt_post_tracker_form_group">
+						<div class="mt_post_tracker_control_label"><?php esc_html_e('Sort posts by visits by default', 'mt_post_tracker'); ?></div>
+						<div class="mt_post_tracker_control">
+							<select name="mt_post_tracker_posts_default_sorting" class="mt_post_tracker_form_control">
+								<option value=0 <?php selected($mt_post_tracker_posts_default_sorting, 0); ?>><?php esc_html_e('Off', 'mt_post_tracker'); ?></option>
+								<option value=1 <?php selected($mt_post_tracker_posts_default_sorting, 1); ?>><?php esc_html_e('On', 'mt_post_tracker'); ?></option>
+							</select>
+							<span class="mt_post_tracker_form_controll_text"><?php esc_html_e('Sort by visits by default when opening the posts page', 'mt_post_tracker'); ?></span>
+						</div>
+					</div>
+					<div class="mt_post_tracker_form_group">
+						<div class="mt_post_tracker_control_label"><?php esc_html_e('Sort products by visits by default', 'mt_post_tracker'); ?></div>
+						<div class="mt_post_tracker_control">
+							<select name="mt_post_tracker_products_default_sorting" class="mt_post_tracker_form_control">
+								<option value=0 <?php selected($mt_post_tracker_products_default_sorting, 0); ?>><?php esc_html_e('Off', 'mt_post_tracker'); ?></option>
+								<option value=1 <?php selected($mt_post_tracker_products_default_sorting, 1); ?>><?php esc_html_e('On', 'mt_post_tracker'); ?></option>
+							</select>
+							<span class="mt_post_tracker_form_controll_text"><?php esc_html_e('Sort by visits by default when opening the products page', 'mt_post_tracker'); ?></span>
 						</div>
 					</div>
 				</div>
